@@ -467,8 +467,8 @@
   <section data-label="Results" style="padding:var(--pt) var(--px) var(--pb);background:var(--navy-mid);">
     <div class="label">Final Results</div>
     <div class="divider"></div>
-    <h2 style="font-size:var(--t-title);font-weight:700;letter-spacing:-0.02em;margin-bottom:44px;">
-      3-class merging delivers the breakthrough
+    <h2 style="font-size:64px;font-weight:700;letter-spacing:-0.02em;margin-bottom:44px;">
+      3-class merging and retraining delivers the breakthrough
     </h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px;">
       <div style="padding:36px 40px;background:rgba(234,179,8,0.04);border:1px solid rgba(234,179,8,0.2);border-radius:20px;">
@@ -486,6 +486,10 @@
           <div><div style="font-size:80px;font-weight:700;color:var(--teal);line-height:1;">77%</div><div style="font-size:var(--t-small);color:var(--muted);font-family:'Inter',sans-serif;margin-top:8px;">Macro F1</div></div>
         </div>
         <div style="font-size:var(--t-label);color:var(--muted);font-family:'Inter',sans-serif;line-height:1.6;">Excellent+Good→Good · Fair+Poor→Bad. Directly answers the navigation question: <em>"Is this segment safe to drive?"</em></div>
+        <div style="margin-top:16px;padding:14px 18px;background:rgba(255,255,255,0.04);border-left:3px solid var(--amber);border-radius:6px;">
+          <div style="font-size:var(--t-label);color:var(--amber);font-weight:600;margin-bottom:4px;">Note — Hyperparameters</div>
+          <div style="font-size:var(--t-label);color:var(--muted);font-family:'Inter',sans-serif;line-height:1.5;">Trained separately on merged labels, but reuses 5-class hyperparameters. No dedicated HPO run yet — tuning for 3-class is a clear next step.</div>
+        </div>
       </div>
     </div>
     <div style="display:flex;align-items:center;justify-content:center;gap:40px;padding:26px 48px;background:var(--navy-card);border:1px solid var(--border);border-radius:14px;">
@@ -493,7 +497,7 @@
       <div style="font-size:44px;color:var(--teal);">→</div>
       <div style="font-size:44px;font-weight:700;color:var(--teal);">3-class: 81%</div>
       <div style="width:1px;height:40px;background:var(--border);"></div>
-      <div style="font-size:var(--t-small);font-weight:700;color:var(--green-soft);">+28 percentage points from class merging</div>
+      <div style="font-size:var(--t-small);font-weight:700;color:var(--green-soft);">+28 pp · further gains expected with dedicated HPO</div>
     </div>
   </section>
 
